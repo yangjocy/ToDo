@@ -18,6 +18,22 @@ let config = {
 			test:/\.vue$/,
 			loader:'vue-loader',
 		},{
+			test:/\.jsx$/,
+			loader:'babel-loader',
+		},{
+			test:/\.styl$/,
+			use:[
+			'style-loader',
+			'css-loader',
+			{
+				loader:'postcss-loader',
+				options:{
+					sourceMap:true
+				}
+			},
+			'stylus-loader'
+			],
+		},{
 			test:/\.css$/,
 			use:[
 			'style-loader',
@@ -43,6 +59,8 @@ let config = {
 	new HTMLPlugin(),
 	]
 }
+
+
 
 if (isDev) {
 	config.devtool = '#cheap-module-eval-source-map',
