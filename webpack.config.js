@@ -31,7 +31,7 @@ let config = {
 					sourceMap:true
 				}
 			},
-			'stylus-loader'
+			'stylus-loader',
 			],
 		},{
 			test:/\.css$/,
