@@ -1,5 +1,5 @@
 <template>	
-	<div class = 'main-header'>
+	<div class = 'main-header light-font'>
 		<h1>Vue Todo</h1>
 	</div>
 </template>
@@ -8,7 +8,6 @@
 	.main-header{
 		text-align center
 		h1{
-			color lightgray
 			font-size 100px
 			font-weight 20px
 		}
